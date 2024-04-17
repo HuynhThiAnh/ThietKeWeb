@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing:border-box;
+            font-family: Arial;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            padding: 1px  5%;
+        }
+        header nav ul li {
+            list-style: none;
+            float: left;
+            padding:10px 20px ;
+            cursor: pointer; 
+        }
+        .grid-container{
+            display: grid;
+            gap: 30px;
+            margin: 40px;
+        }
+        .grid-item{
+            text-align: left;
+        }
+        .item1{
+            grid-row: 1;
+            /* width: 900px;
+            height: 600px; */
+        }
+        .item2{
+            grid-row: 1;
+        }
+        .item3{
+            grid-column: 1/span 3;
+            grid-row: 2;
+            background-color: rgb(84, 83, 83);
+            height: 60px;
+            text-align: center;
+            padding: 25px;
+            color: white;
+        }
+        .grid-container1{
+            display: flex;
+            gap: 30px;
+            margin: 40px;
+        }
+        .grid-item1{
+            border: 1px solid ;
+            border-radius: 2px;
+            padding: 10px;
+        }
+        .item4{
+            grid-row: 3;
+        }
+        .item5{
+            grid-row: 3;
+        }
+        .item6{
+            grid-row: 3;
+        }
+        input{
+            background-color: rgb(55, 101, 187);
+            border: none;
+            border-radius: 3px ;
+            height: 30px;
+        }
+        input[type=submit]:hover {  background-color: #89e2c2;}
+        .footer{
+            background-color: black;
+            color:white;
+            text-align: center;
+            height: 50px;
+            padding: 20px;
+        }
+    </style>
+</header>
+<body>
+    <header>
+        <b style="color:white">Start Bootstrap</b>
+        <nav>
+            <ul>
+                <li style="color:white">Home</li>
+                <li style="color:rgb(199, 194, 194)">About</li>
+                <li style="color:rgb(199, 194, 194)">Contact</li>
+                <li style="color:rgb(199, 194, 194)">Services</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="grid-container">
+        <div class="grid-item item1">
+            <img src="../images/n1.png" width="750px"; height="350px">
+        </div>
+        <div class="grid-item item2">
+            <h3>Business Name or Tagline</h3> <br>
+            <span>This is a template that is great for small businesses.It doesn't have too much fancy flare to it,
+                 but it makes a great use of the standard Bootstrap core components.
+                Feel free to use this template for any project you want</span><br>
+            <input type="submit" value="Call to Action!">
+        </div>
+        <div class="grid-item item3">
+            <h>This call to action card is a great place to showcase some important information or display a clever tagline!</h>
+        </div>
+    </div>
+    <div class="grid-container1">
+        <div class="grid-item1 item4">
+            <h3>Card One</h3>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus. </span>
+            <hr><input type="submit" value="More Info">
+        </div>
+        <div class="grid-item1 item5">
+            <h3>Card Two</h3>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</span>
+            <hr><input type="submit" value="More Info">
+        </div>
+        <div class="grid-item1 item6">
+            <h3>Card Three</h3>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</span>
+            <hr><input type="submit" value="More Info">
+        </div>
+    
+    </div>
+    <div class="footer">
+        <h5>Copyright &#169 Your Website 2023 </h5>
+</body>
+
+</html>

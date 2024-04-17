@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                font-family: 'Times New Roman',;
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                
+            }
+            header{
+                display: flex;
+                justify-content: space-between;
+                background-color: rgb(40, 39, 39);
+                align-items: center;
+                padding: 5px;
+            }
+            header nav ul li{
+                display: flex;
+                list-style: none;
+                float: left;
+                color: rgb(168, 162, 162);   
+                padding: 10px ;
+            }
+            .grid-container{
+                display: grid;
+                background-color: rgb(39, 37, 37);
+                color: white;
+            }
+            .item1{
+                grid-row: 1;
+                margin: 70px;
+                align-items: center;
+                text-align: center;
+            }
+            .item2{
+                grid-row: 1;
+                margin: 50px;
+            }
+            table{
+                margin: 20px;
+            }
+            td{
+                width: 30%;
+                padding: 10px;
+            }
+            table tr td img{
+                width: 30px;
+                height: 30px;
+            }
+            input[type=submit]{
+                margin: 20px;
+                border: 1px solid white;
+                border-radius: 2px;
+                color: white;
+                width: 90px;
+                height: 30px;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <header>
+            <b style="color: white;">Start Bootstrap</b>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li> About</li>
+                    <li>Contact</li>
+                    <li>Pricing</li>
+                    <li>FAQ</li>
+                    <li>Blog</li>
+                    <li>Protfolio</li>
+                </ul>
+            </nav>
+        </header>
+        <div class="grid-container">
+            <div class="grid-item item1" >
+                <h1>A Bootstrap 5 template for modern businesses</h1>
+                <br><h>Quickly design and customize responsive mobile-first sites width
+                    Bootstrap, the world's most popular front-end open source toolkit!
+                </h>
+                <br>
+                <input type="submit" value="Get Started" style="background-color: dodgerblue;">
+                <input type="submit" value="Learn More" style="background-color: rgb(39, 37, 37)">
+            </div>
+            <div class="grid-item item2">
+                <img src="../images/tet.jpg">
+            </div>
+        </div>
+        <!-- <div class="grid-item item3"> -->
+        <table>
+            <tr>
+                <td rowspan="2"><h3>A better way to start building</h3></td>
+                <td><img src="../images/f1.png">
+                <br> <b>Featured title</b> 
+                <br>Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</td>
+                <td><img src="../images/r2.png">
+                 <br> <b>Featured title </b>
+                       <br> Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.
+                </td>
+            </tr>
+            <tr>
+                <td><img src="../images/r3.png">
+                    <br> <b>Featured title </b>
+                    <br>Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.
+                </td>
+                <td><img src="../images/r2.png">
+                     <br> <b>Featured title </b>
+                      <br>Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.
+                </td>
+            </tr>
+        </table>
+            <!-- </div> -->
+    </body>
+</html>

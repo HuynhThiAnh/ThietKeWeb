@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Website Layout</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            header{
+                color: white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px 10%;
+                background-color:rgb(5, 15, 11)
+
+            }
+            header nav ul li{
+                list-style: none;
+                float: left;
+                padding:10px 20px ;
+                cursor: pointer;      /* làm mất cái dấu chấm */     
+             }
+             .color{
+                background-color: rgb(35, 110, 55);
+             }
+            .container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(52, 120, 82);
+            }
+            .box1{
+                display: flex;
+                justify-content: center;
+                margin: 50px 50px;
+
+            }
+            .container1{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .box{
+                color:white;
+            }
+            .h{
+                color: black;
+                margin-top: 30px;
+            }
+        </style>
+
+    </head>
+    <body>
+            <header>
+                <span>START BOOTSTRAP</span>
+                <nav>
+                    <ul>
+                        <li class="color">PORTFOLIO</li>
+                        <li>ABOUT</li>
+                        <li>CONTACT</li>
+                    </ul>
+                </nav>
+            </header>    
+            <div class="container">
+                <div class="box1">
+                    <img src="RESCO.jpg" width="30%">
+                </div>
+                <div class="box2">
+                <div class="box "><h1>START BOOTSTRAP</h1></div>
+                <div class="box ">____________<img src="../images/ngoisao.png"width="5%">_____________ </div>
+                <div class="box ">Graphic Artist - Web Designer - Illustrator</div>
+                </div>
+            </div>
+            <div class="container1">
+                <div class="h"><h1>PORTFOLIO</h1></div>
+                <div class="h">_________<img src="../images/den.png" width="5%">________</div>
+            </div>
+        
+    </body>
+</html>
